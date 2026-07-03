@@ -1,4 +1,4 @@
-import { APP_VERSION, GITHUB_URL } from '../config';
+import { APP_VERSION } from '../config';
 
 export default function Footer() {
   return (
