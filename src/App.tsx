@@ -93,10 +93,13 @@ export default function App() {
       <main className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* Inputs card */}
         <section aria-label="Inputs" className="rounded-2xl bg-card p-5 shadow-card sm:p-6">
-          <h2 className="mb-1 font-display text-lg font-bold">Inputs</h2>
-          <p className="mb-5 text-xs text-muted">
-            Fill in any two — the third updates as you type.
-          </p>
+          <h2 className="mb-3 font-display text-lg font-bold">Inputs</h2>
+          <div className="mb-6 flex items-start gap-2.5 rounded-xl border border-accent/20 bg-accent-soft px-3.5 py-3">
+            <span aria-hidden="true" className="mt-0.5 font-display text-base font-bold text-accent-strong">→</span>
+            <p className="text-sm font-semibold text-accent-strong">
+              Fill in any two — the third updates as you type.
+            </p>
+          </div>
           <div className="space-y-5">
             <InputField
               id="salary"
